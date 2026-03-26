@@ -13,7 +13,7 @@
 		</div>
 		<h4><span style="color: #000000;"> ■ <strong>ADEFE ALENQUER</strong></span></h4>
 		<h4>Endereço: Av. 25 de Abril 40A, 2580-373 Alenquer</h4>
-		<h4>Código Postal: 00000</h4>
+		<h4>Código Postal: 2580-373</h4>
 		<h4>Alenquer</h4>
 		<h4>Portugal</h4>
 		<h4>Tel.: +351916696168</h4>
