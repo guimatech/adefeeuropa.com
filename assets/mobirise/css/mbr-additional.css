@@ -1341,7 +1341,7 @@ a {
 .cid-tJS6uM4N87 {
   padding-top: 12rem;
   padding-bottom: 2rem;
-  background-color: #edefeb;
+  background-image: url("../../images/bg-pastor.png");
 }
 .cid-tJS6uM4N87 .mbr-fallback-image.disabled {
   display: none;
@@ -2536,5 +2536,12 @@ a {
   text-align: center;
 }
 .cid-tJS9NNcTLZ .mbr-section-title {
+  color: #ffffff;
+}
+
+.cid-vffaHt3BP7 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #0c2c68;
   color: #ffffff;
 }
