@@ -1342,6 +1342,21 @@ a {
   padding-top: 12rem;
   padding-bottom: 2rem;
   background-image: url("../../images/bg-pastor.png");
+  background-size: cover;
+  background-position: center center;
+}
+@media (max-width: 767px) {
+  .cid-tJS6uM4N87 {
+    background-position: 80% center;
+  }
+  /* jarallax cria um elemento filho com a imagem — forçar posição à direita em mobile */
+  #header05-1 .jarallax-img {
+    object-position: 80% center !important;
+  }
+  /* fallback para quando o parallax usa background-image em vez de img tag */
+  #header05-1 [id^="jarallax-container"] > div {
+    background-position: 80% center !important;
+  }
 }
 .cid-tJS6uM4N87 .mbr-fallback-image.disabled {
   display: none;
