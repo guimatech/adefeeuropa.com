@@ -78,6 +78,27 @@
     }
 }
 
+/* Nav menu no-wrap fix */
+.nav-menu-nowrap {
+    flex-wrap: nowrap;
+}
+
+.nav-menu-nowrap .nav-item .nav-link {
+    white-space: nowrap;
+    padding: 0.5rem 0.7rem;
+    font-size: 0.95rem;
+}
+
+.nav-menu-nowrap .dropdown-menu .dropdown-item {
+    font-size: 0.85rem;
+}
+
+@media (max-width: 991px) {
+    .nav-menu-nowrap {
+        flex-wrap: wrap;
+    }
+}
+
 /* YouTube Videos Section */
 .yt-video-card {
     display: block;
