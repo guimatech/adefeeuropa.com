@@ -287,3 +287,168 @@
         height: 200px;
     }
 }
+
+/* Igrejas Section */
+.igr-search-wrap {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.igr-search-wrap .form-control {
+    border-radius: 24px;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+    border: 2px solid #e0e0e0;
+}
+
+.igr-search-wrap .form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.15);
+}
+
+.igr-filter-btn {
+    padding: 0.35rem 0.9rem;
+    border-radius: 20px;
+    border: 2px solid var(--secondary-color);
+    background: transparent;
+    color: var(--secondary-color);
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.igr-filter-btn:hover {
+    background: rgba(0, 78, 137, 0.08);
+}
+
+.igr-filter-btn.active {
+    background: var(--secondary-color);
+    color: white;
+}
+
+.igr-country {
+    margin-bottom: 2.5rem;
+}
+
+.igr-country-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.6rem 1rem;
+    background: var(--secondary-color);
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.igr-flag {
+    font-size: 1.8rem;
+}
+
+.igr-country-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    flex: 1;
+}
+
+.igr-count {
+    font-size: 0.8rem;
+    opacity: 0.75;
+}
+
+.igr-region {
+    margin-bottom: 1rem;
+    padding-left: 0.5rem;
+}
+
+.igr-region-title {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--gray);
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 0.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.igr-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 0.4rem;
+}
+
+.igr-item {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 0.45rem 0.65rem;
+    border: 1px solid #e8e8e8;
+    border-radius: 6px;
+    background: var(--light);
+    cursor: pointer;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--dark);
+    transition: all 0.2s ease;
+}
+
+.igr-item:hover {
+    border-color: var(--primary-color);
+    background: #fff5f0;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Igreja Modal */
+.igm-header {
+    position: relative;
+    background: linear-gradient(135deg, var(--secondary-color), #003366);
+    text-align: center;
+    padding: 0;
+}
+
+.igm-header .btn-close {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    z-index: 1;
+}
+
+.igm-photo {
+    width: 100%;
+    max-height: 280px;
+    object-fit: cover;
+    display: block;
+}
+
+.igm-body {
+    padding: 1.25rem;
+}
+
+.igm-nome {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.15rem;
+}
+
+.igm-pastor {
+    color: var(--gray);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.igm-body p {
+    margin: 0.25rem 0;
+    font-size: 0.88rem;
+}
+
+.igm-body a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.igm-body a:hover {
+    text-decoration: underline;
+}

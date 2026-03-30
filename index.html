@@ -1049,54 +1049,29 @@
     <div class="container">
       <div class="mbr-section-head mb-5">
         <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
-          <strong>Visite-nos</strong>
+          <strong>Nossas Igrejas</strong>
         </h3>
         <h4 class="mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-4 display-5">
-          Venha fazer parte da nossa família e experimentar o mover de
-          Deus.<br />todo: Aqui se vais colocar todos os endereços<br /><strong>exemplo menus de convenções</strong>:
-          https://cgadb.org.br/#
+          Venha fazer parte da nossa família e experimentar o mover de Deus
         </h4>
       </div>
-      <div class="row justify-content-center mt-4">
-        <div class="card col-12 col-md-5">
-          <div class="card-wrapper">
-            <div class="text-wrapper">
-              <h5 class="cardTitle mbr-fonts-style mb-2 display-5">
-                <strong>Entre em contato</strong>
-              </h5>
-              <ul class="list mbr-fonts-style display-7">
-                <li class="mbr-text item-wrap">
-                  <span style="font-size: 1.4rem">Phone: </span><a href="tel:+12345678910" class="text-primary"
-                    style="font-size: 1.4rem">0 (800) 123 45 67</a><br />
-                </li>
-                <li class="mbr-text item-wrap">
-                  WhatsApp:
-                  <a href="https://wa.me/12345678910" class="text-primary">0 (800) 123 45 67</a>
-                </li>
-                <li class="mbr-text item-wrap">
-                  Email:
-                  <a href="mailto:info@site.com" class="text-primary">info@site.com</a>
-                </li>
-                <li class="mbr-text item-wrap"><br /></li>
-                <li class="mbr-text item-wrap">Address:</li>
-                <li class="mbr-text item-wrap">
-                  350 5th Ave, New York, NY 10118
-                </li>
-                <li class="mbr-text item-wrap">
-                  <span style="font-size: 1.4rem">Working hours:</span><br />
-                </li>
-                <li class="mbr-text item-wrap">9:00AM - 6:00PM</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="map-wrapper col-12 col-md-7">
-          <div class="google-map">
-            <iframe frameborder="0" style="border: 0"
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6045.3003145248895!2d-73.9884657!3d40.7477229!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9ac1f1b85%3A0x7e33d1c0e7af3be4!2zMzUwIDV0aCBBdmUsIE5ldyBZb3JrLCBOWSAxMDExOCwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1689597362021!5m2!1sen!2sen"
-              allowfullscreen=""></iframe>
-          </div>
-        </div>
+
+      <!-- Barra de pesquisa -->
+      <div class="igr-search-wrap mb-3">
+        <input type="text" id="igrejas-search" class="form-control" placeholder="🔍 Pesquisar por igreja, cidade ou superintendente..." />
+      </div>
+
+      <!-- Filtro por país -->
+      <div id="igrejas-pais-filter" class="d-flex flex-wrap gap-2 mb-4"></div>
+
+      <!-- Conteúdo renderizado pelo JS: países > regiões > igrejas em colunas -->
+      <div id="igrejas-grid"></div>
+    </div>
+
+    <!-- Modal de detalhes -->
+    <div class="modal fade" id="igrejaModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content" id="igrejaModalContent"></div>
       </div>
     </div>
   </section>
@@ -1162,6 +1137,7 @@
   <script src="assets/theme/js/script.js"></script>
   <script src="assets/gallery/player.min.js"></script>
   <script src="assets/gallery/script.js"></script>
+  <script src="assets/igrejas/igrejas.js"></script>
 
   <script>
     (function () {
