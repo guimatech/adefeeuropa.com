@@ -423,55 +423,90 @@
 }
 
 /* Igreja Modal */
-.igm-header {
-    position: relative;
-    background: linear-gradient(135deg, var(--secondary-color), #003366);
-    text-align: center;
-    padding: 0;
+.igm-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.25rem;
+    background: var(--secondary-color);
+    color: white;
 }
 
-.igm-header .btn-close {
-    position: absolute;
-    top: 0.75rem;
-    right: 0.75rem;
-    z-index: 1;
+.igm-top .igm-nome {
+    margin: 0;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: white;
 }
 
-.igm-photo {
-    width: 100%;
-    max-height: 280px;
-    object-fit: cover;
-    display: block;
+.igm-top .btn-close {
+    filter: invert(1);
+    flex-shrink: 0;
 }
 
-.igm-body {
+.igm-content {
+    display: flex;
+    gap: 1.25rem;
     padding: 1.25rem;
 }
 
-.igm-nome {
-    font-size: 1.1rem;
+.igm-photo-col {
+    flex-shrink: 0;
+    width: 160px;
+    text-align: center;
+}
+
+.igm-photo {
+    width: 160px;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 8px;
+    display: block;
+}
+
+.igm-pastor-name {
+    font-size: 0.85rem;
     font-weight: 700;
-    margin-bottom: 0.15rem;
+    margin-top: 0.5rem;
+    color: var(--dark);
 }
 
-.igm-pastor {
-    color: var(--gray);
-    font-size: 0.9rem;
-    margin-bottom: 0.5rem;
+.igm-info-col {
+    flex: 1;
+    min-width: 0;
 }
 
-.igm-body p {
-    margin: 0.25rem 0;
+.igm-info-col p {
+    margin: 0.3rem 0;
     font-size: 0.88rem;
 }
 
-.igm-body a {
+.igm-info-col a {
     color: var(--secondary-color);
     text-decoration: none;
 }
 
-.igm-body a:hover {
+.igm-info-col a:hover {
     text-decoration: underline;
+}
+
+.igm-map {
+    padding: 0 1.25rem 1.25rem;
+}
+
+@media (max-width: 575px) {
+    .igm-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .igm-photo-col {
+        width: 120px;
+    }
+    .igm-photo {
+        width: 120px;
+        height: 150px;
+    }
 }
 
 /* WhatsApp Floating Button */

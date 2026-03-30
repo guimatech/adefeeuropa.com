@@ -102,22 +102,24 @@
         (lon - 0.008) + ',' + (lat - 0.008) + ',' + (lon + 0.008) + ',' + (lat + 0.008) +
         '&layer=mapnik&marker=' + lat + ',' + lon + '" loading="lazy" style="border:0"></iframe></div>';
     }
-    var html = '<div class="igm-header">' +
-      '<img src="' + ig.img + '" alt="Pr. ' + ig.pastor + '" class="igm-photo" />' +
-      '<button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>' +
-      '</div>' +
-      '<div class="igm-body">' +
+    var html = '<div class="igm-top">' +
       '<h5 class="igm-nome">' + ig.nome + '</h5>' +
-      '<p class="igm-pastor">Pr. ' + ig.pastor + '</p>' +
-      '<hr>' +
+      '<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>' +
+      '</div>' +
+      '<div class="igm-content">' +
+      '<div class="igm-photo-col">' +
+      '<img src="' + ig.img + '" alt="Pr. ' + ig.pastor + '" class="igm-photo" />' +
+      '<p class="igm-pastor-name">Pr. ' + ig.pastor + '</p>' +
+      '</div>' +
+      '<div class="igm-info-col">' +
       '<p><strong>📍 Endereço:</strong> ' + ig.endereco + '</p>' +
       (ig.cp ? '<p><strong>📮 Código Postal:</strong> ' + ig.cp + '</p>' : '') +
       '<p><strong>🏙️ Cidade:</strong> ' + ig.cidade + ' — ' + ig.pais + '</p>' +
       '<p><strong>📞 Tel.:</strong> <a href="tel:' + ig.tel + '">' + ig.tel + '</a></p>' +
       '<p><strong>✉️ E-mail:</strong> <a href="mailto:' + ig.email + '">' + ig.email + '</a></p>' +
       (ig.regional ? '<p><strong>🏛️ Pastor Regional:</strong> ' + ig.regional + '</p>' : '') +
-      mapHtml +
-      '</div>';
+      '</div></div>' +
+      (mapHtml ? '<div class="igm-map">' + mapHtml + '</div>' : '');
     document.getElementById('igrejaModalContent').innerHTML = html;
     new bootstrap.Modal(document.getElementById('igrejaModal')).show();
   }
