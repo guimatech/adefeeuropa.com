@@ -150,3 +150,70 @@
     text-overflow: ellipsis;
     max-width: calc(100% - 40px);
 }
+
+/* Directoria Geral Cards */
+.dir-card {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    border-radius: 12px;
+    background: var(--light);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.dir-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+
+.dir-card--presidente {
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 4px 24px rgba(255, 107, 53, 0.15);
+}
+
+.dir-card__img {
+    width: 110px;
+    height: 110px;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #e9ecef;
+}
+
+.dir-card--presidente .dir-card__img {
+    width: 130px;
+    height: 130px;
+    border-color: var(--primary-color);
+}
+
+.dir-card__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dir-card__cargo {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--light);
+    background: var(--secondary-color);
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    margin-bottom: 0.5rem;
+}
+
+.dir-card--presidente .dir-card__cargo {
+    background: var(--primary-color);
+}
+
+.dir-card__nome {
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin: 0.5rem 0 0;
+    color: var(--dark);
+    line-height: 1.3;
+}
