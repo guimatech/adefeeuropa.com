@@ -81,21 +81,36 @@
 /* Nav menu no-wrap fix */
 .nav-menu-nowrap {
     flex-wrap: nowrap;
+    width: 100%;
 }
 
 .nav-menu-nowrap .nav-item .nav-link {
     white-space: nowrap;
-    padding: 0.5rem 0.7rem;
-    font-size: 0.95rem;
+    padding: 0.5rem 0.55rem;
+    font-size: 0.9rem;
 }
 
 .nav-menu-nowrap .dropdown-menu .dropdown-item {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
+}
+
+@media (min-width: 992px) and (max-width: 1399px) {
+    .nav-menu-nowrap .nav-item .nav-link {
+        padding: 0.5rem 0.4rem;
+        font-size: 0.82rem;
+    }
+    .nav-menu-nowrap .dropdown-menu .dropdown-item {
+        font-size: 0.75rem;
+    }
 }
 
 @media (max-width: 991px) {
     .nav-menu-nowrap {
         flex-wrap: wrap;
+    }
+    .nav-menu-nowrap .nav-item .nav-link {
+        padding: 0.5rem 0.7rem;
+        font-size: 0.95rem;
     }
 }
 
