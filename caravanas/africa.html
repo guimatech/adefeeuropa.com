@@ -207,6 +207,15 @@
       document.getElementById('whatsapp-float').href='https://api.whatsapp.com/send?phone=34603353658&text='+encodeURIComponent(msg);
     })();
   </script>
+  <button id="back-to-top" aria-label="Voltar ao topo">&#9650;</button>
+  <script>
+    (function(){
+      var btn=document.getElementById('back-to-top');
+      window.addEventListener('scroll',function(){btn.classList.toggle('visible',window.scrollY>400);});
+      btn.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+    })();
+  </script>
+
   <input name="animation" type="hidden" />
 </body>
 </html>

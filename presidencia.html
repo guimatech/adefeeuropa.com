@@ -141,6 +141,7 @@
             <h4 class="mbr-fonts-style display-5 mb-3"><strong>Formação e Títulos</strong></h4>
             <ul class="mbr-fonts-style display-7">
               <li>Pastor</li>
+              <li>Escritor</li>
               <li>Psicanalista</li>
               <li>Bacharel em Teologia</li>
               <li>Mestre em Aconselhamento</li>
@@ -148,6 +149,7 @@
               <li>Coordenador do IGAM na Europa</li>
               <li>Membro da CEADEB e CGADB</li>
               <li>Presidente e Fundador da ADEFE EUROPA — ligada à CEADEB e CGADB</li>
+              <li>Presidente da Convenção de Ministros e Igrejas Evangélicas na Europa - COMADEFE</li>
             </ul>
           </div>
         </div>
@@ -205,6 +207,15 @@
       document.getElementById('whatsapp-float').href='https://api.whatsapp.com/send?phone=34603353658&text='+encodeURIComponent(msg);
     })();
   </script>
+  <button id="back-to-top" aria-label="Voltar ao topo">&#9650;</button>
+  <script>
+    (function(){
+      var btn=document.getElementById('back-to-top');
+      window.addEventListener('scroll',function(){btn.classList.toggle('visible',window.scrollY>400);});
+      btn.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+    })();
+  </script>
+
   <input name="animation" type="hidden" />
 </body>
 </html>

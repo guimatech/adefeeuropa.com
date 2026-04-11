@@ -552,3 +552,32 @@
     transform: scale(1.1);
     box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
 }
+
+/* Back to Top Button */
+#back-to-top {
+    position: fixed;
+    bottom: 90px;
+    right: 24px;
+    z-index: 9998;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--secondary-color, #004E89);
+    color: #fff;
+    border: none;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    font-size: 1.2rem;
+    line-height: 1;
+}
+#back-to-top.visible {
+    display: flex;
+}
+#back-to-top:hover {
+    transform: scale(1.1);
+    background: var(--primary-color, #FF6B35);
+}

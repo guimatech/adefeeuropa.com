@@ -887,7 +887,7 @@
             <div class="dir-card__img">
               <img src="assets/images/sanzio.jpg" alt="Pr. Sanzio Elmo Sousa Soares" />
             </div>
-            <span class="dir-card__cargo">Presidente da Mesa da Assembleia Geral</span>
+            <span class="dir-card__cargo">1° Diretor da Mesa da Assembleia Geral</span>
             <h5 class="dir-card__nome">Pr. Sanzio Elmo Sousa Soares</h5>
             <small class="dir-card__igreja">ADEFE SEDE_CENTRAL</small>
           </div>
@@ -898,7 +898,7 @@
             <div class="dir-card__img">
               <img src="https://www.appsheet.com/template/gettablefileurl?appName=SGFAE-SystemManagementFinanceandPeopleofADEFEEUROPA-4463353&tableName=Cadastro%20Geral%20de%20Membros%20e%20Obreiros%20Fi%C3%A9is%20da%20ADEFE%20EUROPA&fileName=Cadastro%20Geral%20de%20Membros%20e%20Obreiros%20Fi%C3%A9is%20da%20ADEFE%20EUROPA_Images%2F0086FD9DE4-%20Jo%C3%A3o%20Paulo%20Santos%20Moreira.Fotografia%20para%20perfil.172523.jpg" alt="Pr. João Paulo Santos Moreira" />
             </div>
-            <span class="dir-card__cargo">1º Vice-Presidente da Mesa da Assembleia Geral</span>
+            <span class="dir-card__cargo">2° Diretor da Mesa da Assembleia Geral</span>
             <h5 class="dir-card__nome">Pr. João Paulo Santos Moreira</h5>
             <small class="dir-card__igreja">ADEFE ODIVELAS</small>
           </div>
@@ -942,7 +942,7 @@
             <div class="dir-card__img">
               <img src="https://www.appsheet.com/template/gettablefileurl?appName=SGFAE-SystemManagementFinanceandPeopleofADEFEEUROPA-4463353&tableName=Cadastro%20Geral%20de%20Membros%20e%20Obreiros%20Fi%C3%A9is%20da%20ADEFE%20EUROPA&fileName=Cadastro%20Geral%20de%20Membros%20e%20Obreiros%20Fi%C3%A9is%20da%20ADEFE%20EUROPA_Images%2F001EAEF78D-%20Jabson%20Gon%C3%A7alves%20Ferreira.Fotografia%20para%20perfil.161509.jpg" alt="Pr. Jabson Gonçalves Ferreira" />
             </div>
-            <span class="dir-card__cargo">Presidente do Conselho Fiscal</span>
+            <span class="dir-card__cargo">Diretor do Conselho Fiscal</span>
             <h5 class="dir-card__nome">Pr. Jabson Gonçalves Ferreira</h5>
             <small class="dir-card__igreja">ADEFE BENAVENTE</small>
           </div>
@@ -1229,6 +1229,15 @@
     (function(){
       var msg = 'Shalom, sou visitante no Site da ADEFE EUROPA, estou visitando a página ' + document.title + ' (' + window.location.href + ') e desejo obter mais informações.';
       document.getElementById('whatsapp-float').href = 'https://api.whatsapp.com/send?phone=34603353658&text=' + encodeURIComponent(msg);
+    })();
+  </script>
+
+  <button id="back-to-top" aria-label="Voltar ao topo">&#9650;</button>
+  <script>
+    (function(){
+      var btn=document.getElementById('back-to-top');
+      window.addEventListener('scroll',function(){btn.classList.toggle('visible',window.scrollY>400);});
+      btn.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
     })();
   </script>
 
