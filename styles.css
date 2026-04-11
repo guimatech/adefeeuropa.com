@@ -68,6 +68,11 @@
     flex-wrap: wrap;
 }
 
+.hero-content .mbr-section-btn .btn {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.3);
+}
+
 @media (max-width: 480px) {
     .hero-title {
         font-size: 2rem;
