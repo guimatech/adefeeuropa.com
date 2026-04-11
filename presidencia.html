@@ -207,6 +207,22 @@
       document.getElementById('whatsapp-float').href='https://api.whatsapp.com/send?phone=34603353658&text='+encodeURIComponent(msg);
     })();
   </script>
+  <!-- Mobile menu auto-close -->
+  <script>
+    (function(){
+      var navCollapse = document.getElementById('navbarSupportedContent');
+      if (!navCollapse) return;
+      navCollapse.querySelectorAll('a.nav-link, a.dropdown-item').forEach(function(link){
+        link.addEventListener('click', function(){
+          var bsCollapse = bootstrap.Collapse.getInstance(navCollapse);
+          if (bsCollapse && navCollapse.classList.contains('show')) {
+            bsCollapse.hide();
+          }
+        });
+      });
+    })();
+  </script>
+
   <button id="back-to-top" aria-label="Voltar ao topo">&#9650;</button>
   <script>
     (function(){
