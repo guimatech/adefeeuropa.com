@@ -1237,12 +1237,14 @@
     (function(){
       var navCollapse = document.getElementById('navbarSupportedContent');
       if (!navCollapse) return;
-      navCollapse.querySelectorAll('a.nav-link, a.dropdown-item').forEach(function(link){
+      navCollapse.querySelectorAll('a.nav-link:not(.dropdown-toggle), a.dropdown-item').forEach(function(link){
         link.addEventListener('click', function(){
-          var bsCollapse = bootstrap.Collapse.getInstance(navCollapse);
-          if (bsCollapse && navCollapse.classList.contains('show')) {
-            bsCollapse.hide();
-          }
+          setTimeout(function(){
+            var bsCollapse = bootstrap.Collapse.getInstance(navCollapse);
+            if (bsCollapse && navCollapse.classList.contains('show')) {
+              bsCollapse.hide();
+            }
+          }, 150);
         });
       });
     })();
