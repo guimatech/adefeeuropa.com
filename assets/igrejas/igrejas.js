@@ -168,7 +168,7 @@
           '<div class="igr-list">';
         igrejas.forEach(function (ig) {
           html += '<button class="igr-item" data-idx="' + IGREJAS.indexOf(ig) + '">' +
-            '⛪ ' + ig.nome.replace('ADEFE ', '') +
+            'AD ' + ig.nome.replace('ADEFE ', '') +
             '</button>';
         });
         html += '</div></div>';
