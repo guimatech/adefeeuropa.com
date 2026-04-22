@@ -558,6 +558,40 @@
     box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
 }
 
+/* Navbar Social Icons */
+.navbar-social {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: auto;
+    padding-left: 1rem;
+}
+.navbar-social a {
+    color: #555;
+    font-size: 1.1rem;
+    transition: color 0.2s, transform 0.2s;
+    line-height: 1;
+}
+.navbar-social a:hover {
+    color: var(--primary-color, #FF6B35);
+    transform: scale(1.15);
+}
+@media (max-width: 991px) {
+    .navbar-social {
+        justify-content: center;
+        margin-left: 0;
+        padding: 0.75rem 0 0;
+    }
+}
+
+/* Full-width navbar */
+.cid-tJS6tZXiPa .navbar > .container {
+    max-width: 100%;
+    width: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
 /* Back to Top Button */
 #back-to-top {
     position: fixed;
