@@ -4,6 +4,11 @@
     'Luxembourg': '🇱🇺', 'France': '🇫🇷', 'Germany': '🇩🇪', 'Guinea-Bisáu': '🇬🇼'
   };
 
+  var PAIS_PT = {
+    'Portugal': 'Portugal', 'Spain': 'Espanha', 'Belgium': 'Bélgica',
+    'Luxembourg': 'Luxemburgo', 'France': 'França', 'Germany': 'Alemanha', 'Guinea-Bisáu': 'Guiné-Bissau'
+  };
+
   var IGREJAS = [
     {nome:"ADEFE ALENQUER",tel:"+351916696168",email:"alenquer@adefeeuropa.com",endereco:"Av. 25 de Abril 40A, 2580-373 Alenquer",cidade:"Alenquer",cp:"2580-373",regiao:"REGIONAL 04",pais:"Portugal",coords:"",pastor:"Jucelio Leandro Da Silva",regional:"Telmo Santos Martins",img:"https://www.appsheet.com/template/gettablefileurl?appName=SGFAE-SystemManagementFinanceandPeopleofADEFEEUROPA-4463353&tableName=Cadastro%20Geral%20de%20Membros%20e%20Obreiros%20Fi%C3%A9is%20da%20ADEFE%20EUROPA&fileName=Cadastro%20Geral%20de%20Membros%20e%20Obreiros%20Fi%C3%A9is%20da%20ADEFE%20EUROPA_Images%2FToItvJvErx-%20Jucelio%20Leandro%20da%20Silva.Fotografia%20para%20perfil.165330.jpg"},
     {nome:"ADEFE ALGUEIRÃO",tel:"+351960494621",email:"algueirao@adefeeuropa.com",endereco:"Av. Marginal 8, 2725-397 Algueirão-Mem Martins",cidade:"Algueirão",cp:"2725-397",regiao:"REGIONAL 03",pais:"Portugal",coords:"38.797742,-9.341746",pastor:"Paulo Jose Souza Pinheiro",regional:"Jaime Do Espírito Santo",img:"https://www.appsheet.com/template/gettablefileurl?appName=SGFAE-SystemManagementFinanceandPeopleofADEFEEUROPA-4463353&tableName=Cadastro%20Geral%20de%20Membros%20e%20Obreiros%20Fi%C3%A9is%20da%20ADEFE%20EUROPA&fileName=Cadastro%20Geral%20de%20Membros%20e%20Obreiros%20Fi%C3%A9is%20da%20ADEFE%20EUROPA_Images%2F00CFEE61E7.Fotografia%20para%20perfil.191510.jpg"},
@@ -114,7 +119,7 @@
       '<div class="igm-info-col">' +
       '<p><strong>📍 Endereço:</strong> ' + ig.endereco + '</p>' +
       (ig.cp ? '<p><strong>📮 Código Postal:</strong> ' + ig.cp + '</p>' : '') +
-      '<p><strong>🏙️ Cidade:</strong> ' + ig.cidade + ' — ' + ig.pais + '</p>' +
+      '<p><strong>🏙️ Cidade:</strong> ' + ig.cidade + ' — ' + (PAIS_PT[ig.pais] || ig.pais) + '</p>' +
       '<p><strong>📞 Tel.:</strong> <a href="tel:' + ig.tel + '">' + ig.tel + '</a></p>' +
       '<p><strong>✉️ E-mail:</strong> <a href="mailto:' + ig.email + '">' + ig.email + '</a></p>' +
       (ig.regional ? '<p><strong>🏛️ Pastor Regional:</strong> ' + ig.regional + '</p>' : '') +
@@ -131,7 +136,7 @@
     paises.forEach(function (pais) {
       var flag = FLAGS[pais] || '🏳️';
       var count = IGREJAS.filter(function (i) { return i.pais === pais; }).length;
-      html += '<button class="igr-filter-btn' + (activePais === pais ? ' active' : '') + '" data-pais="' + pais + '">' + flag + ' ' + pais + ' (' + count + ')</button>';
+      html += '<button class="igr-filter-btn' + (activePais === pais ? ' active' : '') + '" data-pais="' + pais + '">' + flag + ' ' + (PAIS_PT[pais] || pais) + ' (' + count + ')</button>';
     });
     container.innerHTML = html;
   }
@@ -157,7 +162,7 @@
       html += '<div class="igr-country">' +
         '<div class="igr-country-bar">' +
         '<span class="igr-flag">' + flag + '</span>' +
-        '<span class="igr-country-name">' + pais + '</span>' +
+        '<span class="igr-country-name">' + (PAIS_PT[pais] || pais) + '</span>' +
         '<span class="igr-count">' + totalPais + ' igreja' + (totalPais > 1 ? 's' : '') + '</span>' +
         '</div>';
 
