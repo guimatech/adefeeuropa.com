@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="assets/socicon/css/styles.css" />
   <link rel="stylesheet" href="assets/theme/css/style.css" />
   <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
+  <link rel="stylesheet" href="assets/acessibilidade/acessibilidade.css" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap"
     as="style" onload="this.onload=null;this.rel='stylesheet';" />
@@ -202,7 +203,7 @@
                   <span style="color:rgba(255,255,255,.85); font-size:.95rem; font-family:monospace;">PT50 0033 0000 4563 9864 8880 5</span>
                 </div>
                 <img src="assets/images/Millennium-BCP.png" alt="Millennium BCP" style="height:36px; width:auto; object-fit:contain; opacity:.9;" />
-                <button onclick="navigator.clipboard.writeText('PT50003300004563986488805')" class="btn btn-primary display-7" style="white-space:nowrap;">Copiar</button>
+                <button onclick="copiarTexto('PT50003300004563986488805',this)" class="btn btn-primary display-7" style="white-space:nowrap;">Copiar</button>
               </div>
             </div>
 
@@ -214,7 +215,7 @@
                   <br><span style="color:rgba(255,255,255,.6); font-size:.8rem;">SWIFT/BIC: BESCPTPL</span>
                 </div>
                 <img src="assets/images/novobanco.png" alt="Novo Banco" style="height:36px; width:auto; object-fit:contain; opacity:.9;" />
-                <button onclick="navigator.clipboard.writeText('PT50000700000000372421923')" class="btn btn-primary display-7" style="white-space:nowrap;">Copiar</button>
+                <button onclick="copiarTexto('PT50000700000000372421923',this)" class="btn btn-primary display-7" style="white-space:nowrap;">Copiar</button>
               </div>
             </div>
 
@@ -225,7 +226,7 @@
                   <span style="color:rgba(255,255,255,.85); font-size:.95rem; font-family:monospace;">ES51 0182 2400 7402 0166 6582</span>
                 </div>
                 <img src="assets/images/BBVA-Emblem.png" alt="BBVA" style="height:36px; width:auto; object-fit:contain; opacity:.9;" />
-                <button onclick="navigator.clipboard.writeText('ES5101822400740201666582')" class="btn btn-primary display-7" style="white-space:nowrap;">Copiar</button>
+                <button onclick="copiarTexto('ES5101822400740201666582',this)" class="btn btn-primary display-7" style="white-space:nowrap;">Copiar</button>
               </div>
             </div>
 
@@ -236,7 +237,7 @@
                   <span style="color:rgba(255,255,255,.85); font-size:.95rem; font-family:monospace;">AG 2293-4 &nbsp;|&nbsp; CC 17.519-6</span>
                 </div>
                 <img src="assets/images/banco-do-brasil-2-logo-png-transparent.png" alt="Banco do Brasil" style="height:36px; width:auto; object-fit:contain; opacity:.9;" />
-                <button onclick="navigator.clipboard.writeText('AG 2293-4 | CC 17.519-6')" class="btn btn-primary display-7" style="white-space:nowrap;">Copiar</button>
+                <button onclick="copiarTexto('AG 2293-4 | CC 17.519-6',this)" class="btn btn-primary display-7" style="white-space:nowrap;">Copiar</button>
               </div>
             </div>
 
@@ -247,7 +248,7 @@
                   <span style="color:rgba(255,255,255,.85); font-size:.95rem; font-family:monospace;">659.683.105.10</span>
                 </div>
                 <img src="assets/images/logo-pix.png" alt="PIX" style="height:36px; width:auto; object-fit:contain; opacity:.9;" />
-                <button onclick="navigator.clipboard.writeText('659.683.105.10')" class="btn btn-primary display-7" style="white-space:nowrap;">Copiar</button>
+                <button onclick="copiarTexto('659.683.105.10',this)" class="btn btn-primary display-7" style="white-space:nowrap;">Copiar</button>
               </div>
             </div>
 
@@ -284,6 +285,30 @@
   <script src="assets/smoothscroll/smooth-scroll.js"></script>
   <script src="assets/dropdown/js/navbar-dropdown.js"></script>
   <script src="assets/theme/js/script.js"></script>
+
+  <!-- Copiar para área de transferência -->
+  <script>
+    function copiarTexto(texto, btn) {
+      var original = btn.innerText;
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(texto).then(function() {
+          btn.innerText = 'Copiado!';
+          setTimeout(function() { btn.innerText = original; }, 2000);
+        });
+      } else {
+        var ta = document.createElement('textarea');
+        ta.value = texto;
+        ta.style.position = 'fixed';
+        ta.style.left = '-9999px';
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+        btn.innerText = 'Copiado!';
+        setTimeout(function() { btn.innerText = original; }, 2000);
+      }
+    }
+  </script>
 
   <!-- MB WAY Form Script -->
   <script>
@@ -356,6 +381,7 @@
       document.getElementById('whatsapp-float').href='https://api.whatsapp.com/send?phone=34603353658&text='+encodeURIComponent(msg);
     })();
   </script>
+  <script src="assets/acessibilidade/acessibilidade.js"></script>
   <input name="animation" type="hidden" />
 </body>
 </html>

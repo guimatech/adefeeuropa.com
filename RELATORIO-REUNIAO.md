@@ -26,7 +26,7 @@ Este documento reúne e organiza as observações, sugestões e solicitações d
 
 - [x] **8.** Incluir menu de redes sociais.
 - [x] **9.** Incluir menu "Nossa Missão".
-- [ ] **10.** Incluir menu de acessibilidade.
+- [x] **10.** Incluir menu de acessibilidade.
 
 ## 4. Página Inicial (Home)
 
