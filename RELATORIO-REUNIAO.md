@@ -42,8 +42,8 @@ Este documento reúne e organiza as observações, sugestões e solicitações d
 
 ## 6. Seção de Missões
 
-- [ ] **17.** Acrescentar mais informações bancárias na aba de Missões.
-- [ ] **18.** Incluir mais imagens relacionadas ao tema Missões.
+- [x] **17.** Acrescentar mais informações bancárias na aba de Missões.
+- [x] **18.** Incluir mais imagens relacionadas ao tema Missões.
 
 ## 7. Seção "Sobre Nós"
 
