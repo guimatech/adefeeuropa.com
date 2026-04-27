@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
   <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon" />
-  <meta name="description" content="Cadastro de Membresia - ADEFE Europa" />
-  <title>Membresia - ADEFE Europa</title>
+  <meta name="description" content="Calendário de Eventos - ADEFE Europa" />
+  <title>Eventos - ADEFE Europa</title>
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css" />
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
   <link rel="stylesheet" href="assets/parallax/jarallax.css" />
@@ -24,6 +24,21 @@
     as="style" onload="this.onload=null;this.rel='stylesheet';" />
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter+Tight:300,400,600,700&display=swap" /></noscript>
   <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=XcCTIe" />
+  <style>
+    .evt-card { background:#f8f9fa; border-radius:10px; padding:1.5rem; display:flex; gap:1rem; align-items:flex-start; transition:box-shadow .2s; }
+    .evt-card:hover { box-shadow:0 4px 16px rgba(0,0,0,.08); }
+    .evt-date { min-width:60px; text-align:center; background:var(--primary-color,#FF6B35); color:#fff; border-radius:8px; padding:.6rem .5rem; line-height:1.1; }
+    .evt-date .evt-day { font-size:1.6rem; font-weight:800; display:block; }
+    .evt-date .evt-month { font-size:.7rem; text-transform:uppercase; letter-spacing:1px; display:block; margin-top:2px; }
+    .evt-info h5 { margin:0 0 .3rem; font-size:1rem; font-weight:700; }
+    .evt-info p { margin:0; font-size:.85rem; color:#666; }
+    .evt-badge { display:inline-block; font-size:.7rem; padding:2px 8px; border-radius:20px; font-weight:600; }
+    .evt-badge--worship { background:#e8f5e9; color:#2e7d32; }
+    .evt-badge--youth { background:#e3f2fd; color:#1565c0; }
+    .evt-badge--admin { background:#fff3e0; color:#e65100; }
+    .evt-badge--travel { background:#fce4ec; color:#c62828; }
+    .evt-badge--special { background:#f3e5f5; color:#6a1b9a; }
+  </style>
 </head>
 <body>
 
@@ -76,8 +91,8 @@
             <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="index.html#contacts02-9">Igrejas</a></li>
             <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="index.html#form02-6">Contato</a></li>
             <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="contribuir.html">Contribuir</a></li>
-            <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="eventos.html">Eventos</a></li>
             <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="membresia.html">Membresia</a></li>
+            <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="eventos.html">Eventos</a></li>
             <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="https://comadefe.com" target="_blank" rel="noopener">COMADEFE</a></li>
           </ul>
           <div class="navbar-social">
@@ -95,78 +110,155 @@
   <section data-bs-version="5.1" class="header5 cid-tJS6uM4N87 mbr-parallax-background" data-jarallax data-speed="0.5" data-img-position="center center">
     <div class="container text-center" style="position:relative; z-index:1;">
       <h1 class="mbr-section-title mbr-fonts-style display-1" style="color:#fff; text-shadow: #084a87 0px 0px 10px;">
-        Cadastro de <span class="highlight">Membresia</span>
+        Calendário de <span class="highlight">Eventos</span>
       </h1>
       <p class="mbr-fonts-style mt-3 display-5" style="color:rgba(255,255,255,.75); text-shadow: #084a87 0px 0px 10px;">
-        Cadastro Único de Membros e Obreiros Fiéis da ADEFE Europa
+        Agenda da ADEFE Europa — <script>document.write(new Date().getFullYear())</script>
       </p>
     </div>
   </section>
 
-  <!-- CONTEÚDO -->
+  <!-- EVENTOS -->
   <section class="py-5">
     <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="d-flex flex-column gap-3">
 
-      <!-- Boas-vindas -->
-      <div class="row justify-content-center mb-5">
-        <div class="col-lg-8 text-center">
-          <h3 class="mbr-fonts-style display-5 mb-3"><strong>Seja bem-vindo(a)!</strong></h3>
-          <p class="mbr-fonts-style display-7">
-            Este é o formulário oficial de Cadastro Único da ADEFE Europa. Através dele, você poderá solicitar a sua membresia ou atualizar os seus dados junto à nossa igreja.
-          </p>
-        </div>
-      </div>
+            <!-- Janeiro -->
+            <div class="evt-card">
+              <div class="evt-date"><span class="evt-day">14</span><span class="evt-month">Jan</span></div>
+              <div class="evt-info">
+                <h5>Inauguração ADEFE Torres Vedras</h5>
+                <p><i class='bx bx-time-five'></i> 19h</p>
+                <span class="evt-badge evt-badge--worship">Culto</span>
+              </div>
+            </div>
 
-      <!-- Informações -->
-      <div class="row justify-content-center mb-5 g-4">
-        <div class="col-lg-5">
-          <div class="item-wrapper" style="background:#f8f9fa; border-radius:10px; padding:2rem; height:100%;">
-            <h4 class="mbr-fonts-style display-5 mb-3"><strong>Quem deve preencher?</strong></h4>
-            <ul class="mbr-fonts-style display-7">
-              <li>Todos os membros atuais das igrejas locais da ADEFE na Europa</li>
-              <li>Quem deseja solicitar membresia no Corpo de Cristo</li>
-              <li>Obreiros designados para funções ministeriais ou administrativas</li>
-              <li>Obreiros recebidos oficialmente vindos de outro ministério</li>
-            </ul>
+            <div class="evt-card">
+              <div class="evt-date"><span class="evt-day">25</span><span class="evt-month">Jan</span></div>
+              <div class="evt-info">
+                <h5>Formatura ADEFE Kids</h5>
+                <p><i class='bx bx-time-five'></i> 09h</p>
+                <span class="evt-badge evt-badge--youth">Kids</span>
+              </div>
+            </div>
+
+            <!-- Fevereiro -->
+            <div class="evt-card">
+              <div class="evt-date"><span class="evt-day">14-16</span><span class="evt-month">Fev</span></div>
+              <div class="evt-info">
+                <h5>COMADEFE | Simpósio e AGO's</h5>
+                <p><i class='bx bx-calendar-event'></i> 3 dias</p>
+                <span class="evt-badge evt-badge--admin">Institucional</span>
+              </div>
+            </div>
+
+            <!-- Abril -->
+            <div class="evt-card">
+              <div class="evt-date"><span class="evt-day">03-05</span><span class="evt-month">Abr</span></div>
+              <div class="evt-info">
+                <h5>UMADEFE Europa | Sede</h5>
+                <p><i class='bx bx-calendar-event'></i> 3 dias</p>
+                <span class="evt-badge evt-badge--youth">Juventude</span>
+              </div>
+            </div>
+
+            <!-- Maio -->
+            <div class="evt-card">
+              <div class="evt-date"><span class="evt-day">01</span><span class="evt-month">Mai</span></div>
+              <div class="evt-info">
+                <h5>UMADEFE Espanha | Durango</h5>
+                <span class="evt-badge evt-badge--youth">Juventude</span>
+              </div>
+            </div>
+
+            <div class="evt-card">
+              <div class="evt-date"><span class="evt-day">02</span><span class="evt-month">Mai</span></div>
+              <div class="evt-info">
+                <h5>EMADEFE Espanha | Barakaldo</h5>
+                <span class="evt-badge evt-badge--worship">Culto</span>
+              </div>
+            </div>
+
+            <div class="evt-card">
+              <div class="evt-date"><span class="evt-day">23</span><span class="evt-month">Mai</span></div>
+              <div class="evt-info">
+                <h5>Reunião Geral | Sede</h5>
+                <p><i class='bx bx-time-five'></i> 08h30 às 20h30</p>
+                <span class="evt-badge evt-badge--admin">Institucional</span>
+              </div>
+            </div>
+
+            <!-- Julho -->
+            <div class="evt-card">
+              <div class="evt-date"><span class="evt-day">19-25</span><span class="evt-month">Jul</span></div>
+              <div class="evt-info">
+                <h5>Semana de Oração no Monte</h5>
+                <p><i class='bx bx-calendar-event'></i> 7 dias</p>
+                <span class="evt-badge evt-badge--special">Especial</span>
+              </div>
+            </div>
+
+            <!-- Agosto -->
+            <div class="evt-card">
+              <div class="evt-date"><span class="evt-day">01-09</span><span class="evt-month">Ago</span></div>
+              <div class="evt-info">
+                <h5>Grande Festa da Gratidão</h5>
+                <p><i class='bx bx-calendar-event'></i> 9 dias</p>
+                <span class="evt-badge evt-badge--special">Especial</span>
+              </div>
+            </div>
+
+            <div class="evt-card">
+              <div class="evt-date"><span class="evt-day">05-07</span><span class="evt-month">Ago</span></div>
+              <div class="evt-info">
+                <h5>Simpósio e AGO's</h5>
+                <p><i class='bx bx-calendar-event'></i> 3 dias</p>
+                <span class="evt-badge evt-badge--admin">Institucional</span>
+              </div>
+            </div>
+
+            <!-- Outubro -->
+            <div class="evt-card">
+              <div class="evt-date"><span class="evt-day">05</span><span class="evt-month">Out</span></div>
+              <div class="evt-info">
+                <h5>Caravana para Israel</h5>
+                <p><i class='bx bx-map'></i> Data prevista</p>
+                <span class="evt-badge evt-badge--travel">Caravana</span>
+              </div>
+            </div>
+
+            <div class="evt-card">
+              <div class="evt-date"><span class="evt-day">15</span><span class="evt-month">Out</span></div>
+              <div class="evt-info">
+                <h5>Caravana Turquia — 7 Igrejas da Ásia</h5>
+                <p><i class='bx bx-map'></i> Data prevista</p>
+                <span class="evt-badge evt-badge--travel">Caravana</span>
+              </div>
+            </div>
+
+            <div class="evt-card">
+              <div class="evt-date"><span class="evt-day">25</span><span class="evt-month">Out</span></div>
+              <div class="evt-info">
+                <h5>ADEFE Kids</h5>
+                <span class="evt-badge evt-badge--youth">Kids</span>
+              </div>
+            </div>
+
+            <!-- Novembro -->
+            <div class="evt-card">
+              <div class="evt-date"><span class="evt-day">28</span><span class="evt-month">Nov</span></div>
+              <div class="evt-info">
+                <h5>Reunião Geral</h5>
+                <p><i class='bx bx-time-five'></i> 08h30 às 20h30</p>
+                <span class="evt-badge evt-badge--admin">Institucional</span>
+              </div>
+            </div>
+
           </div>
         </div>
-        <div class="col-lg-5">
-          <div class="item-wrapper" style="background:#f8f9fa; border-radius:10px; padding:2rem; height:100%;">
-            <h4 class="mbr-fonts-style display-5 mb-3"><strong>Segurança e Conformidade</strong></h4>
-            <p class="mbr-fonts-style display-7">
-              Em conformidade com o Regimento Interno, os Estatutos da ADEFE Europa e o Regulamento Geral de Proteção de Dados (RGPD), o seu cadastro é realizado através do nosso sistema informático <strong>SGIFAE</strong> — Sistema de Gestão de Igrejas, Finanças e Administração Eclesiástica — com total segurança.
-            </p>
-          </div>
-        </div>
       </div>
-
-      <!-- Destaque -->
-      <div class="row justify-content-center mb-5">
-        <div class="col-lg-10 text-center">
-          <div class="item-wrapper" style="background:linear-gradient(135deg,#004E89,#084a87); border-radius:10px; padding:2rem; color:#fff;">
-            <p class="mbr-fonts-style display-7" style="color:rgba(255,255,255,.9);">
-              <i class='bx bx-gift' style="font-size:1.5rem; vertical-align:middle;"></i>
-              Ao concluir o preenchimento do formulário, você receberá um livro digital no seu e-mail como presente — uma leitura edificante para a sua vida espiritual!
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Botão de acesso -->
-      <div class="row justify-content-center mb-5">
-        <div class="col-lg-8 text-center">
-          <h4 class="mbr-fonts-style display-5 mb-3"><strong>Acesse o Formulário</strong></h4>
-          <p class="mbr-fonts-style display-7 mb-4">
-            Clique no botão abaixo e selecione a opção que corresponde ao seu cargo ou função.
-          </p>
-          <div class="mbr-section-btn">
-            <a class="btn btn-primary display-7" href="https://www.appsheet.com/start/7606e731-a4f8-4c2e-b50e-1d457f569766#view=Cadastro%20Geral%20de%20Membros%20e%20Obreiros%20PUBLICO%20-%20BARRA" target="_blank" rel="noopener">
-              <i class='bx bx-edit'></i> Preencher Formulário de Cadastro
-            </a>
-          </div>
-        </div>
-      </div>
-
     </div>
   </section>
 
