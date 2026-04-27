@@ -54,7 +54,7 @@ Este documento reúne e organiza as observações, sugestões e solicitações d
 - [ ] **20.** Incluir seção de Livros.
 - [ ] **21.** Adicionar versículo e livro do mês da Bíblia.
 - [x] **22.** Adicionar a página "Ofertar e Contribuir". — Incluir QR Code e opção MBWay.
-- [ ] **23.** Incluir formulário de solicitação de membresia. — Contactar com a assessoria, dado que este já se encontrava presente no modelo anterior.
+- [x] **23.** Incluir formulário de solicitação de membresia. — Página criada com link para o sistema SGIFAE via AppSheet.
 - [ ] **24.** Incluir eventos do boletim presidencial. — Calendário de eventos e agendas da igreja.
 
 ## 9. Correções Técnicas e de Links
