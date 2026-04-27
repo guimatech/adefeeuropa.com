@@ -47,7 +47,7 @@ Este documento reúne e organiza as observações, sugestões e solicitações d
 
 ## 7. Seção "Sobre Nós"
 
-- [x] **19.** Apresentar prévia dos textos com botão "Ler mais". — Cada seção deve levar à página completa correspondente.
+- [x] **19.** Apresentar prévia dos textos com botão "Ler mais". — Cada seção deve levar à página completa correspondente. (Presidência, Nossa Fé, Nossa Missão e Guerreiros Missionários em páginas separadas)
 
 ## 8. Novas Seções e Funcionalidades
 

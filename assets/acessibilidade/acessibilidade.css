@@ -95,12 +95,35 @@
 .a11y-full-btn.active { background: var(--secondary-color, #004E89); color: #fff; border-color: var(--secondary-color, #004E89); }
 
 /* High contrast mode */
-html.a11y-high-contrast {
-    filter: contrast(1.4) !important;
-}
+html.a11y-high-contrast,
 html.a11y-high-contrast body {
-    background: #000 !important;
+    background-color: #000 !important;
     color: #fff !important;
+}
+html.a11y-high-contrast *:not(img):not(video):not(iframe):not(svg):not(path):not(canvas) {
+    background-color: #000 !important;
+    color: #fff !important;
+    border-color: #555 !important;
+    text-shadow: none !important;
+    box-shadow: none !important;
+}
+html.a11y-high-contrast a {
+    color: #ffcc00 !important;
+    text-decoration: underline !important;
+}
+html.a11y-high-contrast .btn,
+html.a11y-high-contrast button {
+    background-color: #fff !important;
+    color: #000 !important;
+    border: 2px solid #fff !important;
+}
+html.a11y-high-contrast .btn:hover,
+html.a11y-high-contrast button:hover {
+    background-color: #ffcc00 !important;
+    color: #000 !important;
+}
+html.a11y-high-contrast img {
+    filter: contrast(1.2);
 }
 
 /* Grayscale mode */
