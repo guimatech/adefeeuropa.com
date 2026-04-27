@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="assets/socicon/css/styles.css" />
   <link rel="stylesheet" href="assets/theme/css/style.css" />
   <link rel="stylesheet" href="assets/gallery/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="preload"
     href="https://fonts.googleapis.com/css?family=Roboto+Condensed:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"
@@ -999,7 +1000,7 @@
 
       <!-- Barra de pesquisa -->
       <div class="igr-search-wrap mb-3">
-        <input type="text" id="igrejas-search" class="form-control" placeholder="🔍 Pesquisar por igreja, cidade ou superintendente..." />
+        <input type="text" id="igrejas-search" class="form-control" placeholder="Pesquisar por igreja, cidade ou superintendente..." />
       </div>
 
       <!-- Filtro por país -->
@@ -1144,6 +1145,20 @@
       jarallax(document.querySelectorAll('[data-jarallax]'), {
         speed: 0.5
       });
+
+      // Opacity scroll navbar
+      var navbar = document.querySelector('.cid-tJS6tZXiPa .navbar');
+      if (navbar) {
+        function checkScroll() {
+          if (window.scrollY > 80) {
+            navbar.classList.add('navbar-short');
+          } else {
+            navbar.classList.remove('navbar-short');
+          }
+        }
+        window.addEventListener('scroll', checkScroll);
+        checkScroll();
+      }
     });
   </script>
   <script src="assets/smoothscroll/smooth-scroll.js"></script>

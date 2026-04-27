@@ -1,7 +1,12 @@
 (function () {
   var FLAGS = {
-    'Portugal': '🇵🇹', 'Spain': '🇪🇸', 'Belgium': '🇧🇪',
-    'Luxembourg': '🇱🇺', 'France': '🇫🇷', 'Germany': '🇩🇪', 'Guinea-Bisáu': '🇬🇼'
+    'Portugal': '<img src="assets/images/flag-portugal.webp" alt="PT" class="flag-icon">', 
+    'Spain': '<img src="assets/images/flag-spain.avif" alt="ES" class="flag-icon">', 
+    'Belgium': '<img src="assets/images/flag-belgica.svg" alt="BE" class="flag-icon">',
+    'Luxembourg': '<img src="assets/images/flag-Luxembourg.png" alt="LU" class="flag-icon">', 
+    'France': '<img src="assets/images/flag-france.svg" alt="FR" class="flag-icon">', 
+    'Germany': '<img src="assets/images/flag-alemanha.avif" alt="DE" class="flag-icon">', 
+    'Guinea-Bisáu': '<img src="assets/images/flag-guinea-bissau.png" alt="GW" class="flag-icon">'
   };
 
   var PAIS_PT = {
@@ -117,12 +122,12 @@
       '<p class="igm-pastor-name">Pr. ' + ig.pastor + '</p>' +
       '</div>' +
       '<div class="igm-info-col">' +
-      '<p><strong>📍 Endereço:</strong> ' + ig.endereco + '</p>' +
-      (ig.cp ? '<p><strong>📮 Código Postal:</strong> ' + ig.cp + '</p>' : '') +
-      '<p><strong>🏙️ Cidade:</strong> ' + ig.cidade + ' — ' + (PAIS_PT[ig.pais] || ig.pais) + '</p>' +
-      '<p><strong>📞 Tel.:</strong> <a href="tel:' + ig.tel + '">' + ig.tel + '</a></p>' +
-      '<p><strong>✉️ E-mail:</strong> <a href="mailto:' + ig.email + '">' + ig.email + '</a></p>' +
-      (ig.regional ? '<p><strong>🏛️ Pastor Regional:</strong> ' + ig.regional + '</p>' : '') +
+      '<p><strong><i class="bx bx-map-pin"></i> Endereço:</strong> ' + ig.endereco + '</p>' +
+      (ig.cp ? '<p><strong><i class="bx bx-mail-send"></i> Código Postal:</strong> ' + ig.cp + '</p>' : '') +
+      '<p><strong><i class="bx bx-buildings"></i> Cidade:</strong> ' + ig.cidade + ' — ' + (PAIS_PT[ig.pais] || ig.pais) + '</p>' +
+      '<p><strong><i class="bx bx-phone"></i> Tel.:</strong> <a href="tel:' + ig.tel + '">' + ig.tel + '</a></p>' +
+      '<p><strong><i class="bx bx-envelope"></i> E-mail:</strong> <a href="mailto:' + ig.email + '">' + ig.email + '</a></p>' +
+      (ig.regional ? '<p><strong><i class="bx bx-user-pin"></i> Pastor Regional:</strong> ' + ig.regional + '</p>' : '') +
       '</div></div>' +
       (mapHtml ? '<div class="igm-map">' + mapHtml + '</div>' : '');
     document.getElementById('igrejaModalContent').innerHTML = html;
@@ -134,7 +139,7 @@
     var paises = sortPaises(Object.keys(groupData(IGREJAS)));
     var html = '<button class="igr-filter-btn' + (activePais === 'all' ? ' active' : '') + '" data-pais="all">Todos (' + IGREJAS.length + ')</button>';
     paises.forEach(function (pais) {
-      var flag = FLAGS[pais] || '🏳️';
+      var flag = FLAGS[pais] || '';
       var count = IGREJAS.filter(function (i) { return i.pais === pais; }).length;
       html += '<button class="igr-filter-btn' + (activePais === pais ? ' active' : '') + '" data-pais="' + pais + '">' + flag + ' ' + (PAIS_PT[pais] || pais) + ' (' + count + ')</button>';
     });
@@ -154,7 +159,7 @@
 
     var html = '';
     paises.forEach(function (pais) {
-      var flag = FLAGS[pais] || '🏳️';
+      var flag = FLAGS[pais] || '';
       var regioes = Object.keys(grouped[pais]).sort();
       var totalPais = 0;
       regioes.forEach(function (r) { totalPais += grouped[pais][r].length; });

@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="assets/dropdown/css/style.css" />
   <link rel="stylesheet" href="assets/socicon/css/styles.css" />
   <link rel="stylesheet" href="assets/theme/css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap"
     as="style" onload="this.onload=null;this.rel='stylesheet';" />
@@ -192,21 +193,64 @@
       <div class="row justify-content-center mb-5" id="transferencia-section">
         <div class="col-lg-8">
           <h4 class="mbr-fonts-style display-5 mb-4 align-center"><strong>Transferência Bancária</strong></h4>
-          <div class="row g-4">
-            <div class="col-md-6">
-              <div class="item-wrapper" style="background:#f8f9fa; border-radius:10px; padding:2rem; height:100%;">
-                <h5 class="mbr-fonts-style display-7 mb-2"><strong>Novo Banco / Portugal</strong></h5>
-                <p class="mbr-fonts-style display-7">IBAN: PT50 0007 0000 0000 3724 2192 3</p>
-                <p class="mbr-fonts-style display-7">SWIFT/BIC: BESCPTPL</p>
+          <div class="row g-3">
+
+            <div class="col-12">
+              <div style="background:linear-gradient(135deg,#004E89,#084a87); border-radius:10px; padding:1.2rem 1.5rem; display:flex; align-items:center; justify-content:space-between; gap:1rem; flex-wrap:wrap;">
+                <div style="flex:1; min-width:200px;">
+                  <strong style="color:#fff; font-size:1.1rem; display:block;">MILLENNIUM BCP</strong>
+                  <span style="color:rgba(255,255,255,.85); font-size:.95rem; font-family:monospace;">PT50 0033 0000 4563 9864 8880 5</span>
+                </div>
+                <img src="assets/images/Millennium-BCP.png" alt="Millennium BCP" style="height:36px; width:auto; object-fit:contain; opacity:.9;" />
+                <button onclick="navigator.clipboard.writeText('PT50003300004563986488805')" class="btn btn-primary display-7" style="white-space:nowrap;">Copiar</button>
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="item-wrapper" style="background:#f8f9fa; border-radius:10px; padding:2rem; height:100%;">
-                <h5 class="mbr-fonts-style display-7 mb-2"><strong>Banco do Brasil</strong></h5>
-                <p class="mbr-fonts-style display-7">Agência: 2293-4</p>
-                <p class="mbr-fonts-style display-7">Conta Corrente: 17.519-6</p>
+
+            <div class="col-12">
+              <div style="background:linear-gradient(135deg,#004E89,#084a87); border-radius:10px; padding:1.2rem 1.5rem; display:flex; align-items:center; justify-content:space-between; gap:1rem; flex-wrap:wrap;">
+                <div style="flex:1; min-width:200px;">
+                  <strong style="color:#fff; font-size:1.1rem; display:block;">NOVO BANCO</strong>
+                  <span style="color:rgba(255,255,255,.85); font-size:.95rem; font-family:monospace;">PT50 0007 0000 0000 3724 2192 3</span>
+                  <br><span style="color:rgba(255,255,255,.6); font-size:.8rem;">SWIFT/BIC: BESCPTPL</span>
+                </div>
+                <img src="assets/images/novobanco.png" alt="Novo Banco" style="height:36px; width:auto; object-fit:contain; opacity:.9;" />
+                <button onclick="navigator.clipboard.writeText('PT50000700000000372421923')" class="btn btn-primary display-7" style="white-space:nowrap;">Copiar</button>
               </div>
             </div>
+
+            <div class="col-12">
+              <div style="background:linear-gradient(135deg,#004E89,#084a87); border-radius:10px; padding:1.2rem 1.5rem; display:flex; align-items:center; justify-content:space-between; gap:1rem; flex-wrap:wrap;">
+                <div style="flex:1; min-width:200px;">
+                  <strong style="color:#fff; font-size:1.1rem; display:block;">BANCO BBVA</strong>
+                  <span style="color:rgba(255,255,255,.85); font-size:.95rem; font-family:monospace;">ES51 0182 2400 7402 0166 6582</span>
+                </div>
+                <img src="assets/images/BBVA-Emblem.png" alt="BBVA" style="height:36px; width:auto; object-fit:contain; opacity:.9;" />
+                <button onclick="navigator.clipboard.writeText('ES5101822400740201666582')" class="btn btn-primary display-7" style="white-space:nowrap;">Copiar</button>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div style="background:linear-gradient(135deg,#004E89,#084a87); border-radius:10px; padding:1.2rem 1.5rem; display:flex; align-items:center; justify-content:space-between; gap:1rem; flex-wrap:wrap;">
+                <div style="flex:1; min-width:200px;">
+                  <strong style="color:#fff; font-size:1.1rem; display:block;">BANCO DO BRASIL</strong>
+                  <span style="color:rgba(255,255,255,.85); font-size:.95rem; font-family:monospace;">AG 2293-4 &nbsp;|&nbsp; CC 17.519-6</span>
+                </div>
+                <img src="assets/images/banco-do-brasil-2-logo-png-transparent.png" alt="Banco do Brasil" style="height:36px; width:auto; object-fit:contain; opacity:.9;" />
+                <button onclick="navigator.clipboard.writeText('AG 2293-4 | CC 17.519-6')" class="btn btn-primary display-7" style="white-space:nowrap;">Copiar</button>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div style="background:linear-gradient(135deg,#004E89,#084a87); border-radius:10px; padding:1.2rem 1.5rem; display:flex; align-items:center; justify-content:space-between; gap:1rem; flex-wrap:wrap;">
+                <div style="flex:1; min-width:200px;">
+                  <strong style="color:#fff; font-size:1.1rem; display:block;">CHAVE PIX</strong>
+                  <span style="color:rgba(255,255,255,.85); font-size:.95rem; font-family:monospace;">659.683.105.10</span>
+                </div>
+                <img src="assets/images/logo-pix.png" alt="PIX" style="height:36px; width:auto; object-fit:contain; opacity:.9;" />
+                <button onclick="navigator.clipboard.writeText('659.683.105.10')" class="btn btn-primary display-7" style="white-space:nowrap;">Copiar</button>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -236,7 +280,7 @@
 
   <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/parallax/jarallax.js"></script>
-  <script>document.addEventListener('DOMContentLoaded', function(){jarallax(document.querySelectorAll('[data-jarallax]'),{speed:0.5});});</script>
+  <script>document.addEventListener('DOMContentLoaded', function(){jarallax(document.querySelectorAll('[data-jarallax]'),{speed:0.5});var nb=document.querySelector('.cid-tJS6tZXiPa .navbar');if(nb){function cs(){nb.classList.toggle('navbar-short',window.scrollY>80);}window.addEventListener('scroll',cs);cs();}});</script>
   <script src="assets/smoothscroll/smooth-scroll.js"></script>
   <script src="assets/dropdown/js/navbar-dropdown.js"></script>
   <script src="assets/theme/js/script.js"></script>

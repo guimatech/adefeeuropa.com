@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="../assets/dropdown/css/style.css" />
   <link rel="stylesheet" href="../assets/socicon/css/styles.css" />
   <link rel="stylesheet" href="../assets/theme/css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
   <link rel="stylesheet" href="../styles.css" />
   <link rel="preload"
     href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap"
@@ -437,9 +438,9 @@
           </div>
           <div class="item-wrapper" style="background:#f8f9fa; border-radius:10px; padding:2rem;">
             <h5 class="mbr-fonts-style display-5 mb-3"><strong>Contato</strong></h5>
-            <p class="mbr-fonts-style display-7">📞 (+351) 927 602 698 / 963 920 744</p>
-            <p class="mbr-fonts-style display-7">📧 igam@adefeeuropa.com</p>
-            <p class="mbr-fonts-style display-7">🌐 www.adefeeuropa.com</p>
+            <p class="mbr-fonts-style display-7"><i class='bx bx-phone'></i> (+351) 927 602 698 / 963 920 744</p>
+            <p class="mbr-fonts-style display-7"><i class='bx bx-envelope'></i> igam@adefeeuropa.com</p>
+            <p class="mbr-fonts-style display-7"><i class='bx bx-globe'></i> www.adefeeuropa.com</p>
             <div class="mbr-section-btn mt-3">
               <a class="btn btn-primary display-7" href="mailto:igam@adefeeuropa.com">Enviar Email</a>
             </div>
@@ -593,9 +594,9 @@
           </div>
           <div class="item-wrapper" style="background:#f8f9fa; border-radius:10px; padding:2rem;">
             <h5 class="mbr-fonts-style display-5 mb-3"><strong>Contacto</strong></h5>
-            <p class="mbr-fonts-style display-7">📞 (+351) 927 602 698 / 963 920 744</p>
-            <p class="mbr-fonts-style display-7">📧 igam@adefeeuropa.com</p>
-            <p class="mbr-fonts-style display-7">🌐 www.adefeeuropa.com</p>
+            <p class="mbr-fonts-style display-7"><i class='bx bx-phone'></i> (+351) 927 602 698 / 963 920 744</p>
+            <p class="mbr-fonts-style display-7"><i class='bx bx-envelope'></i> igam@adefeeuropa.com</p>
+            <p class="mbr-fonts-style display-7"><i class='bx bx-globe'></i> www.adefeeuropa.com</p>
             <div class="mbr-section-btn mt-3">
               <a class="btn btn-primary display-7" href="mailto:igam@adefeeuropa.com">Enviar Email</a>
             </div>
@@ -654,6 +655,8 @@
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       jarallax(document.querySelectorAll('[data-jarallax]'), { speed: 0.5 });
+      var nb = document.querySelector('.cid-tJS6tZXiPa .navbar');
+      if (nb) { function cs() { nb.classList.toggle('navbar-short', window.scrollY > 80); } window.addEventListener('scroll', cs); cs(); }
     });
   </script>
   <script src="../assets/smoothscroll/smooth-scroll.js"></script>

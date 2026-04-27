@@ -558,6 +558,17 @@
     box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
 }
 
+/* Flag icons */
+.flag-icon {
+    width: 20px;
+    height: 14px;
+    object-fit: cover;
+    border-radius: 2px;
+    vertical-align: middle;
+    margin-right: 2px;
+    box-shadow: 0 0 1px rgba(0,0,0,0.2);
+}
+
 /* Navbar Social Icons */
 .navbar-social {
     display: flex;
@@ -590,6 +601,33 @@
     width: 100%;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+}
+.cid-tJS6tZXiPa,
+.cid-tJS6tZXiPa .navbar {
+    border-radius: 0 !important;
+}
+.cid-tJS6tZXiPa {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+/* Opacity scroll navbar — transparent at top, solid on scroll */
+.cid-tJS6tZXiPa .navbar {
+    background: transparent !important;
+    box-shadow: none !important;
+    transition: all 0.3s ease;
+    border-radius: 0 !important;
+}
+.cid-tJS6tZXiPa .navbar.navbar-short {
+    background: rgba(255, 255, 255, 0.95) !important;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08) !important;
+    min-height: 60px !important;
+}
+.cid-tJS6tZXiPa .navbar.navbar-short .navbar-logo img {
+    height: 3.5rem !important;
 }
 
 /* Back to Top Button */
