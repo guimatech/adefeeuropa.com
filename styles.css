@@ -681,6 +681,15 @@ p, li, a, span, label, input, textarea, select, button {
     height: 3.5rem !important;
 }
 
+/* Versículo do dia */
+#versiculododia {
+    font-style: italic;
+}
+#versiculododia a {
+    color: var(--accent-color) !important;
+    text-decoration: none !important;
+}
+
 /* Cultos tabs */
 #cultosTab .nav-link {
     color: var(--gray);

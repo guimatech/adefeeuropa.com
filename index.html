@@ -161,6 +161,19 @@
     </div>
   </section>
 
+  <!-- Versículo do Dia -->
+  <section class="py-4" style="background:var(--secondary-color);">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <div id="versiculododia" style="color:var(--neutral-color); font-family:var(--font-body); font-size:.95rem; line-height:1.6; font-style:italic;">
+            Carregando versículo do dia...
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section data-bs-version="5.1" class="features4 cid-tMlEXTHLbS" id="features04-w">
     <div class="container">
       <div class="row justify-content-center">
@@ -807,6 +820,51 @@
     })();
   </script>
 
+  <script>
+  // Versículo do Dia — ARC (Almeida Revista e Corrigida)
+  (function(){
+    var versiculos = [
+      {texto:"Porque Deus amou o mundo de tal maneira que deu o seu Filho unigênito, para que todo aquele que nele crê não pereça, mas tenha a vida eterna.",ref:"João 3:16"},
+      {texto:"O Senhor é o meu pastor; nada me faltará.",ref:"Salmos 23:1"},
+      {texto:"Tudo posso naquele que me fortalece.",ref:"Filipenses 4:13"},
+      {texto:"Confia no Senhor de todo o teu coração e não te estribes no teu próprio entendimento.",ref:"Provérbios 3:5"},
+      {texto:"Mas os que esperam no Senhor renovarão as suas forças; subirão com asas como águias; correrão e não se cansarão; caminharão e não se fatigarão.",ref:"Isaías 40:31"},
+      {texto:"Não temas, porque eu sou contigo; não te assombres, porque eu sou o teu Deus; eu te fortaleço, e te ajudo, e te sustento com a destra da minha justiça.",ref:"Isaías 41:10"},
+      {texto:"Vinde a mim, todos os que estais cansados e oprimidos, e eu vos aliviarei.",ref:"Mateus 11:28"},
+      {texto:"E conhecereis a verdade, e a verdade vos libertará.",ref:"João 8:32"},
+      {texto:"Porque eu bem sei os pensamentos que tenho a vosso respeito, diz o Senhor; pensamentos de paz e não de mal, para vos dar o fim que esperais.",ref:"Jeremias 29:11"},
+      {texto:"O Senhor é a minha luz e a minha salvação; a quem temerei? O Senhor é a força da minha vida; de quem me recearei?",ref:"Salmos 27:1"},
+      {texto:"Entrega o teu caminho ao Senhor; confia nele, e ele tudo fará.",ref:"Salmos 37:5"},
+      {texto:"Deus é o nosso refúgio e fortaleza, socorro bem presente na angústia.",ref:"Salmos 46:1"},
+      {texto:"Clama a mim, e responder-te-ei e anunciar-te-ei coisas grandes e firmes, que não sabes.",ref:"Jeremias 33:3"},
+      {texto:"Lâmpada para os meus pés é tua palavra e luz para o meu caminho.",ref:"Salmos 119:105"},
+      {texto:"Buscai primeiro o Reino de Deus, e a sua justiça, e todas essas coisas vos serão acrescentadas.",ref:"Mateus 6:33"},
+      {texto:"Porque para Deus nada é impossível.",ref:"Lucas 1:37"},
+      {texto:"O Senhor é bom, ele serve de fortaleza no dia da angústia e conhece os que confiam nele.",ref:"Naum 1:7"},
+      {texto:"Alegrai-vos sempre no Senhor; outra vez digo: alegrai-vos.",ref:"Filipenses 4:4"},
+      {texto:"Mas, a todos quantos o receberam, deu-lhes o poder de serem feitos filhos de Deus: aos que creem no seu nome.",ref:"João 1:12"},
+      {texto:"Ora, a fé é o firme fundamento das coisas que se esperam e a prova das coisas que se não veem.",ref:"Hebreus 11:1"},
+      {texto:"Porque onde estiver o vosso tesouro, aí estará também o vosso coração.",ref:"Mateus 6:21"},
+      {texto:"Sede fortes e corajosos, não temais, nem vos assusteis por causa deles, porque o Senhor, vosso Deus, é quem vai convosco; não vos deixará, nem vos desamparará.",ref:"Deuteronômio 31:6"},
+      {texto:"Bendize, ó minha alma, ao Senhor, e tudo o que há em mim bendiga o seu santo nome.",ref:"Salmos 103:1"},
+      {texto:"Eu sou o caminho, e a verdade, e a vida. Ninguém vem ao Pai senão por mim.",ref:"João 14:6"},
+      {texto:"Porque os olhos do Senhor estão sobre os justos, e os seus ouvidos, atentos às suas orações.",ref:"1 Pedro 3:12"},
+      {texto:"Sabemos que todas as coisas contribuem juntamente para o bem daqueles que amam a Deus.",ref:"Romanos 8:28"},
+      {texto:"Não to mandei eu? Esforça-te e tem bom ânimo; não pasmes, nem te espantes, porque o Senhor, teu Deus, é contigo, por onde quer que andares.",ref:"Josué 1:9"},
+      {texto:"Eis que estou à porta e bato; se alguém ouvir a minha voz e abrir a porta, entrarei em sua casa e com ele cearei, e ele, comigo.",ref:"Apocalipse 3:20"},
+      {texto:"Porque pela graça sois salvos, por meio da fé; e isso não vem de vós; é dom de Deus.",ref:"Efésios 2:8"},
+      {texto:"O Senhor te abençoe e te guarde; o Senhor faça resplandecer o seu rosto sobre ti e tenha misericórdia de ti.",ref:"Números 6:24-25"},
+      {texto:"Mas, buscai primeiro o Reino de Deus, e a sua justiça, e todas essas coisas vos serão acrescentadas.",ref:"Mateus 6:33"}
+    ];
+    var hoje = new Date();
+    var indice = (hoje.getFullYear() * 366 + hoje.getMonth() * 31 + hoje.getDate()) % versiculos.length;
+    var v = versiculos[indice];
+    var el = document.getElementById('versiculododia');
+    if (el) {
+      el.innerHTML = '"' + v.texto + '"<br><span style="font-style:normal; opacity:.7; font-size:.85rem; margin-top:.3rem; display:inline-block;">— ' + v.ref + ' (ARC)</span>';
+    }
+  })();
+  </script>
   <script src="assets/acessibilidade/acessibilidade.js"></script>
   <input name="animation" type="hidden" />
 </body>

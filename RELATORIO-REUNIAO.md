@@ -52,7 +52,7 @@ Este documento reúne e organiza as observações, sugestões e solicitações d
 ## 8. Novas Seções e Funcionalidades
 
 - [ ] **20.** Incluir seção de Livros.
-- [ ] **21.** Adicionar versículo e livro do mês da Bíblia.
+- [x] **21.** Adicionar versículo e livro do mês da Bíblia. (Versículo do dia adicionado na página principal)
 - [x] **22.** Adicionar a página "Ofertar e Contribuir". — Incluir QR Code e opção MBWay.
 - [x] **23.** Incluir formulário de solicitação de membresia. — Página criada com link para o sistema SGIFAE via AppSheet.
 - [x] **24.** Incluir eventos do boletim presidencial. — Calendário de eventos e agendas da igreja.
