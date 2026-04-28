@@ -11,7 +11,7 @@ Este documento reúne e organiza as observações, sugestões e solicitações d
 
 ## 1. Design e Identidade Visual
 
-- [ ] **1.** Fontes e cores das fontes iniciais incorretas. — Solicitar apoio da equipe de mídia One Vision.
+- [x] **1.** Fontes e cores das fontes iniciais incorretas. — Implementado guia de identidade visual ADEFE (Anton + Poppins, paleta azul #1351AA).
 - [x] **2.** Retirar todos os emojis do site.
 - [x] **3.** Substituir o emoji de igreja pela sigla "AD".
 
@@ -30,8 +30,8 @@ Este documento reúne e organiza as observações, sugestões e solicitações d
 
 ## 4. Página Inicial (Home)
 
-- [ ] **11.** Reduzir o volume de informações na primeira página. — Manter exclusivamente o conteúdo da página Home.
-- [ ] **12.** Retirar o scroll infinito e separar o conteúdo por páginas.
+- [x] **11.** Reduzir o volume de informações na primeira página. — Manter exclusivamente o conteúdo da página Home.
+- [x] **12.** Retirar o scroll infinito e separar o conteúdo por páginas.
 
 ## 5. Seção de Igrejas e Cultos
 

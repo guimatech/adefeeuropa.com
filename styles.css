@@ -1,20 +1,51 @@
 :root {
-    --primary-color: #FF6B35;
-    --secondary-color: #004E89;
-    --accent-color: #F7B801;
-    --dark: #1A1A2E;
+    /* Paleta Primária ADEFE */
+    --primary-color: #1351AA;       /* Azul ADEFE — base */
+    --secondary-color: #032150;     /* Azul profundo */
+    --accent-color: #FFB703;        /* Amarelo destaque */
+    --danger-color: #AB0F0F;        /* Vermelho ênfase */
+    --cyan-color: #6FCFCF;          /* Ciano suporte */
+    --neutral-color: #E3E2DE;       /* Cinza claro neutro */
+    --umadefe-color: #126782;       /* Azul complementar */
+    --orange-color: #F46020;        /* Laranja vibrante */
+    --wine-color: #591414;          /* Vinho escuro */
+    --green-color: #045830;         /* Verde profundo */
+
+    --dark: #032150;
     --light: #FFFFFF;
     --gray: #6C757D;
     --light-gray: #F8F9FA;
-    --gradient: linear-gradient(135deg, #FF6B35 0%, #F7B801 100%);
+    --gradient: linear-gradient(135deg, #1351AA 0%, #FFB703 100%);
     --shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.15);
+
+    /* Tipografia */
+    --font-heading: 'Anton', sans-serif;
+    --font-body: 'Poppins', sans-serif;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+/* Tipografia global */
+body {
+    font-family: var(--font-body);
+}
+h1, h2, h3, h4, h5, h6,
+.display-1, .display-2, .display-3,
+.hero-title, .mbr-section-title,
+.card-title, .item-title {
+    font-family: var(--font-heading);
+    letter-spacing: 0.5px;
+}
+.display-4, .display-5, .display-7,
+.mbr-text, .mbr-fonts-style,
+.nav-link, .dropdown-item,
+p, li, a, span, label, input, textarea, select, button {
+    font-family: var(--font-body);
 }
 
 .hero-overlay {
@@ -39,7 +70,7 @@
     font-weight: 800;
     margin-bottom: 1.5rem;
     line-height: 1.2;
-    text-shadow: #084a87 0px 0px 10px;
+    text-shadow: var(--primary-color) 0px 0px 10px;
 }
 
 .highlight {
@@ -48,7 +79,27 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     font-weight: 800;
-    text-shadow: rgba(255, 107, 53, 0.3) 0px 10px 30px;
+    text-shadow: rgba(19, 81, 170, 0.3) 0px 10px 30px;
+}
+
+/* Botões — identidade ADEFE */
+.btn-primary {
+    background-color: var(--accent-color) !important;
+    border-color: var(--accent-color) !important;
+    color: #000 !important;
+}
+.btn-primary:hover {
+    background-color: #e5a503 !important;
+    border-color: #e5a503 !important;
+}
+.btn-secondary {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    color: #fff !important;
+}
+.btn-secondary:hover {
+    background-color: var(--umadefe-color) !important;
+    border-color: var(--umadefe-color) !important;
 }
 
 .hero-subtitle {
@@ -58,7 +109,7 @@
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
-    text-shadow: #084a87 0px 0px 10px;
+    text-shadow: var(--primary-color) 0px 0px 10px;
 }
 
 .hero-buttons {
@@ -297,7 +348,7 @@
 }
 
 .missao-contribua {
-    background: linear-gradient(135deg, #004E89 0%, #003366 100%);
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
     color: var(--light);
 }
 
