@@ -51,7 +51,7 @@ Este documento reúne e organiza as observações, sugestões e solicitações d
 
 ## 8. Novas Seções e Funcionalidades
 
-- [ ] **20.** Incluir seção de Livros.
+- [x] **20.** Incluir seção de Livros. (Página com 11 livros de autores exclusivos, com destaque para o livro do presidente, redirecionando para a Cânon Nissi)
 - [x] **21.** Adicionar versículo e livro do mês da Bíblia. (Versículo do dia adicionado na página principal)
 - [x] **22.** Adicionar a página "Ofertar e Contribuir". — Incluir QR Code e opção MBWay.
 - [x] **23.** Incluir formulário de solicitação de membresia. — Página criada com link para o sistema SGIFAE via AppSheet.
