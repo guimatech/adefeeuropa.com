@@ -138,6 +138,12 @@ p, li, a, span, label, input, textarea, select, button {
 .nav-menu-nowrap {
     flex-wrap: nowrap;
     width: 100%;
+    justify-content: center;
+}
+
+/* Override theme margin to center nav */
+.cid-tJS6tZXiPa .navbar-nav {
+    margin: 0 auto !important;
 }
 
 .nav-menu-nowrap .nav-item .nav-link {
