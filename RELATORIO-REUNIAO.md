@@ -35,7 +35,7 @@ Este documento reúne e organiza as observações, sugestões e solicitações d
 
 ## 5. Seção de Igrejas e Cultos
 
-- [ ] **13.** Revisar os horários dos cultos. — Algumas igrejas possuem horários distintos dos apresentados.
+- [x] **13.** Revisar os horários dos cultos. — Tabs por país (Portugal/Espanha) com horários diferenciados e nota sobre Santa Ceia na Regional 1.
 - [x] **14.** Incluir a localização das igrejas (endereço/mapa).
 - [x] **15.** Apresentar os nomes dos países em português.
 - [ ] **16.** Nas páginas das congregações, incluir redes sociais e canais das respectivas igrejas.

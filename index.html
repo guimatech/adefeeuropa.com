@@ -246,122 +246,136 @@
 
   <section data-bs-version="5.1" class="features5 cid-vf4T5x22IT" id="features05-1i">
     <div class="container">
-      <div class="row mb-5 justify-content-center">
+      <div class="row mb-4 justify-content-center">
         <div class="col-12 content-head">
           <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-5">
             <strong>Programação</strong>
           </h3>
           <h5 class="mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-4 display-2">
-            <strong> Nossos Cultos</strong>
+            <strong>Nossos Cultos</strong>
           </h5>
         </div>
       </div>
-      <div class="row">
-        <div class="item features-without-image col-12 col-md-6 col-lg-3 item-mb">
-          <div class="item-wrapper">
-            <div class="card-box align-left">
-              <div class="iconfont-wrapper">
-                <span style="
-                      display: inline-flex;
-                      font-size: 1rem;
-                      color: #f7f7f7;
-                      margin-bottom: 1rem;
-                      width: auto;
-                      justify-content: center;
-                      align-items: center;
-                      background: #ff7d19;
-                      border-radius: 2rem;
-                      padding: 0.5rem;
-                    ">Domingo</span>
+
+      <!-- Tabs país -->
+      <ul class="nav nav-pills justify-content-center mb-4" id="cultosTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="tab-pt" data-bs-toggle="pill" data-bs-target="#cultos-pt" type="button" role="tab" style="border-radius:100px;">
+            <img src="assets/images/flag-portugal.webp" alt="PT" class="flag-icon"> Portugal
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="tab-es" data-bs-toggle="pill" data-bs-target="#cultos-es" type="button" role="tab" style="border-radius:100px;">
+            <img src="assets/images/flag-spain.avif" alt="ES" class="flag-icon"> Espanha
+          </button>
+        </li>
+      </ul>
+
+      <div class="tab-content" id="cultosTabContent">
+
+        <!-- PORTUGAL -->
+        <div class="tab-pane fade show active" id="cultos-pt" role="tabpanel">
+          <div class="row">
+            <div class="item features-without-image col-12 col-md-6 col-lg-3 item-mb">
+              <div class="item-wrapper">
+                <div class="card-box align-left">
+                  <div class="iconfont-wrapper">
+                    <span style="display:inline-flex;font-size:1rem;color:#f7f7f7;margin-bottom:1rem;width:auto;justify-content:center;align-items:center;background:var(--primary-color);border-radius:2rem;padding:0.5rem;">Domingo</span>
+                  </div>
+                  <h5 class="card-title mbr-fonts-style display-5"><strong>Culto da Celebração — 18h</strong></h5>
+                  <p class="card-text mbr-fonts-style display-7">Culto de adoração e pregação da Palavra com toda a família.</p>
+                </div>
               </div>
-              <h5 class="card-title mbr-fonts-style display-5">
-                <strong>Culto da Celebração - 18h</strong>
-              </h5>
-              <p class="card-text mbr-fonts-style display-7">
-                Culto de adoração e pregação da Palavra com toda a família.
-              </p>
+            </div>
+            <div class="item features-without-image col-12 col-md-6 col-lg-3 item-mb">
+              <div class="item-wrapper">
+                <div class="card-box align-left">
+                  <div class="iconfont-wrapper">
+                    <span style="display:inline-flex;font-size:1rem;color:#f7f7f7;margin-bottom:1rem;width:auto;justify-content:center;align-items:center;background:var(--primary-color);border-radius:2rem;padding:0.5rem;">Terça-feira</span>
+                  </div>
+                  <h5 class="card-title mbr-fonts-style display-5"><strong>Culto de Ensino da Palavra — 19h</strong></h5>
+                  <p class="card-text mbr-fonts-style display-7">Culto de ensino e doutrina sobre o caráter cristão.</p>
+                </div>
+              </div>
+            </div>
+            <div class="item features-without-image col-12 col-md-6 col-lg-3 item-mb">
+              <div class="item-wrapper">
+                <div class="card-box align-left">
+                  <div class="iconfont-wrapper">
+                    <span style="display:inline-flex;font-size:1rem;color:#f7f7f7;margin-bottom:1rem;width:auto;justify-content:center;align-items:center;background:var(--primary-color);border-radius:2rem;padding:0.5rem;">Quinta-feira</span>
+                  </div>
+                  <h5 class="card-title mbr-fonts-style display-5"><strong>Culto de Intercessão — 19h</strong></h5>
+                  <p class="card-text mbr-fonts-style display-7">Momento de intercessão e busca pela presença de Deus.</p>
+                </div>
+              </div>
+            </div>
+            <div class="item features-without-image col-12 col-md-6 col-lg-3 item-mb">
+              <div class="item-wrapper">
+                <div class="card-box align-left">
+                  <div class="iconfont-wrapper">
+                    <span style="display:inline-flex;font-size:1rem;color:#f7f7f7;margin-bottom:1rem;width:auto;justify-content:center;align-items:center;background:var(--primary-color);border-radius:2rem;padding:0.5rem;">Sábado</span>
+                  </div>
+                  <h5 class="card-title mbr-fonts-style display-5"><strong>E.B.T. — Escola Bíblica para Todos — 18h</strong></h5>
+                  <p class="card-text mbr-fonts-style display-7">Estudo e explanação de temas atuais e pertinentes.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="mbr-fonts-style display-7 text-center mt-3" style="color:#888; font-size:.85rem;">
+            <i class='bx bx-info-circle'></i> Regional 1 — Santa Ceia aos domingos às 09h
+          </p>
+        </div>
+
+        <!-- ESPANHA -->
+        <div class="tab-pane fade" id="cultos-es" role="tabpanel">
+          <div class="row">
+            <div class="item features-without-image col-12 col-md-6 col-lg-3 item-mb">
+              <div class="item-wrapper">
+                <div class="card-box align-left">
+                  <div class="iconfont-wrapper">
+                    <span style="display:inline-flex;font-size:1rem;color:#f7f7f7;margin-bottom:1rem;width:auto;justify-content:center;align-items:center;background:var(--primary-color);border-radius:2rem;padding:0.5rem;">Domingo</span>
+                  </div>
+                  <h5 class="card-title mbr-fonts-style display-5"><strong>Culto da Celebração — 10h</strong></h5>
+                  <p class="card-text mbr-fonts-style display-7">Culto de adoração e pregação da Palavra com toda a família.</p>
+                </div>
+              </div>
+            </div>
+            <div class="item features-without-image col-12 col-md-6 col-lg-3 item-mb">
+              <div class="item-wrapper">
+                <div class="card-box align-left">
+                  <div class="iconfont-wrapper">
+                    <span style="display:inline-flex;font-size:1rem;color:#f7f7f7;margin-bottom:1rem;width:auto;justify-content:center;align-items:center;background:var(--primary-color);border-radius:2rem;padding:0.5rem;">Terça-feira</span>
+                  </div>
+                  <h5 class="card-title mbr-fonts-style display-5"><strong>Culto de Ensino da Palavra — 19h</strong></h5>
+                  <p class="card-text mbr-fonts-style display-7">Culto de ensino e doutrina sobre o caráter cristão.</p>
+                </div>
+              </div>
+            </div>
+            <div class="item features-without-image col-12 col-md-6 col-lg-3 item-mb">
+              <div class="item-wrapper">
+                <div class="card-box align-left">
+                  <div class="iconfont-wrapper">
+                    <span style="display:inline-flex;font-size:1rem;color:#f7f7f7;margin-bottom:1rem;width:auto;justify-content:center;align-items:center;background:var(--primary-color);border-radius:2rem;padding:0.5rem;">Quinta-feira</span>
+                  </div>
+                  <h5 class="card-title mbr-fonts-style display-5"><strong>Culto de Intercessão — 19h</strong></h5>
+                  <p class="card-text mbr-fonts-style display-7">Momento de intercessão e busca pela presença de Deus.</p>
+                </div>
+              </div>
+            </div>
+            <div class="item features-without-image col-12 col-md-6 col-lg-3 item-mb">
+              <div class="item-wrapper">
+                <div class="card-box align-left">
+                  <div class="iconfont-wrapper">
+                    <span style="display:inline-flex;font-size:1rem;color:#f7f7f7;margin-bottom:1rem;width:auto;justify-content:center;align-items:center;background:var(--primary-color);border-radius:2rem;padding:0.5rem;">Sábado</span>
+                  </div>
+                  <h5 class="card-title mbr-fonts-style display-5"><strong>E.B.T. — Escola Bíblica para Todos — 18h</strong></h5>
+                  <p class="card-text mbr-fonts-style display-7">Estudo e explanação de temas atuais e pertinentes.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="item features-without-image col-12 col-md-6 col-lg-3 item-mb">
-          <div class="item-wrapper">
-            <div class="card-box align-left">
-              <div class="iconfont-wrapper">
-                <span style="
-                      display: inline-flex;
-                      font-size: 1rem;
-                      color: #f7f7f7;
-                      margin-bottom: 1rem;
-                      width: auto;
-                      justify-content: center;
-                      align-items: center;
-                      background: #ff7d19;
-                      border-radius: 2rem;
-                      padding: 0.5rem;
-                    ">Terça-feira</span>
-              </div>
-              <h5 class="card-title mbr-fonts-style display-5">
-                <strong>Culto de Ensino da Palavra - 19h</strong>
-              </h5>
-              <p class="card-text mbr-fonts-style display-7">
-                Culto de ensino e doutrina onde se aprende sobre o caráter
-                cristão.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="item features-without-image col-12 col-md-6 col-lg-3 item-mb">
-          <div class="item-wrapper">
-            <div class="card-box align-left">
-              <div class="iconfont-wrapper">
-                <span style="
-                      display: inline-flex;
-                      font-size: 1rem;
-                      color: #f7f7f7;
-                      margin-bottom: 1rem;
-                      width: auto;
-                      justify-content: center;
-                      align-items: center;
-                      background: #ff7d19;
-                      border-radius: 2rem;
-                      padding: 0.5rem;
-                    ">Quinta-feira</span>
-              </div>
-              <h5 class="card-title mbr-fonts-style display-5">
-                <strong>Culto de Intercessão - 19h</strong>
-              </h5>
-              <p class="card-text mbr-fonts-style display-7">
-                Momento de intercessão e busca pela presença e Deus.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="item features-without-image col-12 col-md-6 col-lg-3 item-mb">
-          <div class="item-wrapper">
-            <div class="card-box align-left">
-              <div class="iconfont-wrapper">
-                <span style="
-                      display: inline-flex;
-                      font-size: 1rem;
-                      color: #f7f7f7;
-                      margin-bottom: 1rem;
-                      width: auto;
-                      justify-content: center;
-                      align-items: center;
-                      background: #ff7d19;
-                      border-radius: 2rem;
-                      padding: 0.5rem;
-                    ">Sábado</span>
-              </div>
-              <h5 class="card-title mbr-fonts-style display-5">
-                <strong>E.B.T. - Escola Bíblica para Todos - 18h</strong>
-              </h5>
-              <p class="card-text mbr-fonts-style display-7">
-                Estudo e explanação de temas atuais e pertinentes.
-              </p>
-            </div>
-          </div>
-        </div>
+
       </div>
     </div>
   </section>
