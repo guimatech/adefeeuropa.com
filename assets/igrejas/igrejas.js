@@ -136,7 +136,9 @@
       '</div>' +
       '<div class="igm-content">' +
       '<div class="igm-photo-col">' +
-      '<img src="' + ig.img + '" alt="Pr. ' + ig.pastor + '" class="igm-photo" />' +
+      '<div class="img-skeleton-wrapper img-skeleton">' +
+      '<img src="' + ig.img + '" alt="Pr. ' + ig.pastor + '" class="igm-photo" style="opacity:0;transition:opacity 0.3s ease;" onload="this.style.opacity=\'1\';this.parentElement.classList.remove(\'img-skeleton\');" onerror="this.style.opacity=\'1\';this.parentElement.classList.remove(\'img-skeleton\');" />' +
+      '</div>' +
       '<p class="igm-pastor-name">Pr. ' + ig.pastor + '</p>' +
       '</div>' +
       '<div class="igm-info-col">' +

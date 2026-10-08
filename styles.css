@@ -625,6 +625,46 @@ p, li, a, span, label, input, textarea, select, button {
     }
 }
 
+/* Igreja Modal — photo skeleton shimmer */
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position:  200% 0; }
+}
+
+.img-skeleton {
+  background: linear-gradient(90deg, #e0e0e0 25%, #f5f5f5 50%, #e0e0e0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s infinite linear;
+  border-radius: 8px;
+}
+
+.img-skeleton-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 160px;
+  height: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.img-skeleton-wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 8px;
+}
+
+@media (max-width: 575px) {
+  .img-skeleton-wrapper {
+    width: 120px;
+    height: 150px;
+  }
+}
+
 /* WhatsApp Floating Button */
 #whatsapp-float {
     position: fixed;
