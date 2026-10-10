@@ -8,12 +8,14 @@
     'Luxembourg': '<img src="assets/images/flag-Luxembourg.png" alt="LU" class="flag-icon">', 
     'France': '<img src="assets/images/flag-france.svg" alt="FR" class="flag-icon">', 
     'Germany': '<img src="assets/images/flag-alemanha.avif" alt="DE" class="flag-icon">', 
-    'Guinea-Bisáu': '<img src="assets/images/flag-guinea-bissau.png" alt="GW" class="flag-icon">'
+    'Guinea-Bisáu': '<img src="assets/images/flag-guinea-bissau.png" alt="GW" class="flag-icon">',
+    'Mozambique': '<img src="assets/images/flag-mozambique.png" alt="MZ" class="flag-icon">'
   };
 
   var PAIS_PT = {
     'Portugal': 'Portugal', 'Spain': 'Espanha', 'Belgium': 'Bélgica',
-    'Luxembourg': 'Luxemburgo', 'France': 'França', 'Germany': 'Alemanha', 'Guinea-Bisáu': 'Guiné-Bissau'
+    'Luxembourg': 'Luxemburgo', 'France': 'França', 'Germany': 'Alemanha', 'Guinea-Bisáu': 'Guiné-Bissau',
+    'Mozambique': 'Moçambique'
   };
 
   var IGREJAS = [];
