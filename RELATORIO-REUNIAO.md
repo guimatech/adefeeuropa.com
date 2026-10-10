@@ -17,10 +17,10 @@ Este documento reúne e organiza as observações, sugestões e solicitações d
 
 ## 2. Imagens e Mídia
 
-- [ ] **4.** Imagem da capa sem qualidade. — Substituir por imagem de alta resolução.
-- [ ] **5.** Imagens do presidente mal selecionadas. — Revisar e substituir por fotografias mais adequadas.
-- [ ] **6.** Na seção Caravana de Israel, incluir imagens e vídeos de caravanas anteriores.
-- [ ] **7.** Replicar a estrutura do site da ADVEC. — Enviar as medidas dos banners para a equipe de mídia.
+- [x] **4.** Imagem da capa sem qualidade. — Substituir por imagem de alta resolução.
+- [x] **5.** Imagens do presidente mal selecionadas. — Revisar e substituir por fotografias mais adequadas.
+- [x] **6.** Na seção Caravana de Israel, incluir imagens e vídeos de caravanas anteriores.
+- [x] **7.** Replicar a estrutura do site da ADVEC. — Enviar as medidas dos banners para a equipe de mídia.
 
 ## 3. Navegação e Menus
 
