@@ -137,9 +137,9 @@
       '<div class="igm-content">' +
       '<div class="igm-photo-col">' +
       '<div class="img-skeleton-wrapper img-skeleton">' +
-      '<img src="' + ig.img + '" alt="Pr. ' + ig.pastor + '" class="igm-photo" style="opacity:0;transition:opacity 0.3s ease;" onload="this.style.opacity=\'1\';this.parentElement.classList.remove(\'img-skeleton\');" onerror="this.style.opacity=\'1\';this.parentElement.classList.remove(\'img-skeleton\');" />' +
+      '<img src="' + ig.img + '" alt="' + ig.pastor + '" class="igm-photo" style="opacity:0;transition:opacity 0.3s ease;" onload="this.style.opacity=\'1\';this.parentElement.classList.remove(\'img-skeleton\');" onerror="this.style.opacity=\'1\';this.parentElement.classList.remove(\'img-skeleton\');" />' +
       '</div>' +
-      '<p class="igm-pastor-name">Pr. ' + ig.pastor + '</p>' +
+      '<p class="igm-pastor-name">' + ig.pastor + '</p>' +
       '</div>' +
       '<div class="igm-info-col">' +
       '<p><strong><i class="bx bx-map-pin"></i> Endereço:</strong> ' + ig.endereco + '</p>' +
